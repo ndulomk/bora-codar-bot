@@ -1,0 +1,53 @@
+{
+  "name": "post-automation-api",
+  "version": "1.0.0",
+  "description": "API de automação de posts com agendamento e event-driven architecture",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "automation",
+    "social-media",
+    "twitter",
+    "fastify",
+    "typescript",
+    "event-driven",
+    "scheduling"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "@fastify/cors": "^9.0.1",
+    "twitter-api-v2": "^1.15.2",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.3.1",
+    "pino-pretty": "^10.2.3",
+    "sqlite3": "^5.1.6",
+    "sqlite": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/node-cron": "^3.0.11",
+    "@types/sqlite3": "^3.1.8",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.8",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.1.4",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
